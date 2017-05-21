@@ -25,8 +25,8 @@ chat.conversation[senderID].append('Say "Hello"')
 #chat.converse(firstQuestion,sessionID=senderID)
 message=""
 while message!="bye":
-    message=raw_input(">")
+    message=input(">")
     chat.conversation[senderID].append(message)
     result = chat.respond(message,sessionID=senderID)               
     chat.conversation[senderID].append(result)
-    print result
+    print(result)
